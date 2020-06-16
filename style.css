@@ -132,6 +132,21 @@ footer#main-footer {
     padding: 10px 30px;
     font-size: 13px; }
 
+.useful-links ul li {
+  background-image: url("images/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: blue;
+  color: white; }
+  .useful-links ul li:hover {
+    color: red;
+    cursor: pointer; }
+  .useful-links ul li h6 {
+    font-size: 1.5rem; }
+  .useful-links ul li p {
+    font-size: .9rem; }
+
 #products > div:not(:nth-child(4)) {
   border-right: 1px solid rgba(0, 0, 0, 0.3); }
 
