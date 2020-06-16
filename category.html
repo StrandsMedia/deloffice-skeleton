@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DelOffice | Sample Category</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div id="wrapper" class="container-fluid">
+        <header id="main-header" class="row d-flex flex-column">
+            <div id="top-header" class="d-flex justify-content-between align-items-center">
+                <span><i class="fas fa-map-marker-alt mr-2"></i>Le Hochet, Terre Rouge, Mauritius</span>
+                <span><i class="fas fa-phone-alt mr-2"></i>+230 249 3200</span>
+                <span><i class="fas fa-envelope mr-2"></i>sales@deloffice.mu</span>
+            </div>
+            <div id="bottom-header" class="d-flex justify-content-between align-items-center">
+                <a href="#" id="logo">
+                    <img src="images/deloffice_logo.svg" alt="deloffice_logo" class="img-fluid">
+                </a>
+
+                <form id="search-form" class="d-flex">
+                    <input type="search" name="search" id="search" placeholder="Type in to search...">
+                    <button><i class="fas fa-search"></i></button>
+                </form>
+
+                <div id="items" class="d-flex justify-content-between">
+                    <span id="account">
+                        <i class="fas fa-user"></i>
+                        <!-- <small>My Account</small> -->
+                    </span>
+
+                    <span id="wishlist">
+                        <i class="fas fa-heart"></i>
+                    </span>
+
+                    <span id="cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </span>
+                </div>
+            </div>
+            <nav id="main" class="d-flex justify-content-between align-items-center">
+                <ul>
+                    <li><a href="#">Paper</a></li>
+                    <li><a href="#">Office Supplies</a></li>
+                    <li><a href="#">Food</a></li>
+                    <li><a href="#">Beverages</a></li>
+                    <li><a href="#">Cleaning</a></li>
+                    <li><a href="#">Personal Hygiene</a></li>
+                    <li><a href="#">Ink & Toners</a></li>
+                    <li><a href="#">Printing</a></li>
+                </ul>
+
+                <a href="#">Claro Goes Here</a>
+            </nav>
+        </header>
+        <main id="content" class="row d-flex flex-column flex-nowrap">
+            <div class="row mb-3">
+                <section class="col-12">
+                    <img src="https://via.placeholder.com/1600x250.png" alt="" class="img-fluid">
+                </section>
+            </div>
+            <div class="row mb-3">
+                <div class="col-lg-3 col-md-3 d-none d-md-block">
+                    <h5 class="custom-heading">Product Categories</h5>
+                    <nav class="card mb-3">
+                        <div class="card-body p-0">
+                            <ul>
+                                <li>
+                                    <span data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">
+                                        Personal Hygiene
+                                        <i class="fas fa-plus"></i> 
+                                    </span>
+                                    <ul class="collapse" id="collapse1">
+                                        <li>
+                                            <a >Content</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">
+                                        Paper
+                                        <i class="fas fa-plus"></i> 
+                                    </span>
+                                    <ul class="collapse" id="collapse2">
+                                        <li>
+                                            <a>Content</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3">
+                                        Office Supplies
+                                        <i class="fas fa-plus"></i> 
+                                    </span>
+                                    <ul class="collapse" id="collapse3">
+                                        <li>
+                                            <a>Content</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <a href="#" class="d-block mb-3">
+                        <img src="https://via.placeholder.com/320x400.png" alt="" class="img-fluid">
+                    </a>
+                    <a href="#" class="d-block mb-3">
+                        <img src="https://via.placeholder.com/320x400.png" alt="" class="img-fluid">
+                    </a>
+                </div>
+
+                <div class="col-lg-9 col-md-9 col-12">
+                    <h5 class="custom-heading">Category Name</h5>
+                    <div id="products" class="row ">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6  mb-3">
+                            <div class="card">
+                                <img src="https://via.placeholder.com/1000x1000.png" class="card-img-top img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Multi-Purpose White Copy Paper<br>
+                                        A4 White- 80gsm [Ream: 500 Sheets]<br>
+                                        Brand: HP Everyday HW
+                                    </h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <span id="cart" class="d-flex">
+                                        <input type="number" name="qty" id="qty" value="1" class="text-center">
+                                        <a href="#" class="btn btn-primary"><i class="fas fa-shopping-cart"></i></a>
+                                        <a href="#" class="btn btn-primary"><i class="fas fa-heart"></i></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6  mb-3">
+                            <div class="card">
+                                <img src="https://via.placeholder.com/1000x1000.png" class="card-img-top img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Multi-Purpose White Copy Paper<br>
+                                        A4 White- 80gsm [Ream: 500 Sheets]<br>
+                                        Brand: HP Everyday HW
+                                    </h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <span id="cart" class="d-flex">
+                                        <input type="number" name="qty" id="qty" value="1" class="text-center">
+                                        <a href="#" class="btn btn-primary"><i class="fas fa-shopping-cart"></i></a>
+                                        <a href="#" class="btn btn-primary"><i class="fas fa-heart"></i></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6  mb-3">
+                            <div class="card">
+                                <img src="https://via.placeholder.com/1000x1000.png" class="card-img-top img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Multi-Purpose White Copy Paper<br>
+                                        A4 White- 80gsm [Ream: 500 Sheets]<br>
+                                        Brand: HP Everyday HW
+                                    </h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <span id="cart" class="d-flex">
+                                        <input type="number" name="qty" id="qty" value="1" class="text-center">
+                                        <a href="#" class="btn btn-primary"><i class="fas fa-shopping-cart"></i></a>
+                                        <a href="#" class="btn btn-primary"><i class="fas fa-heart"></i></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6  mb-3">
+                            <div class="card">
+                                <img src="https://via.placeholder.com/1000x1000.png" class="card-img-top img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Multi-Purpose White Copy Paper<br>
+                                        A4 White- 80gsm [Ream: 500 Sheets]<br>
+                                        Brand: HP Everyday HW
+                                    </h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <span id="cart" class="d-flex">
+                                        <input type="number" name="qty" id="qty" value="1" class="text-center">
+                                        <a href="#" class="btn btn-primary"><i class="fas fa-shopping-cart"></i></a>
+                                        <a href="#" class="btn btn-primary"><i class="fas fa-heart"></i></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6  mb-3">
+                            <div class="card">
+                                <img src="https://via.placeholder.com/1000x1000.png" class="card-img-top img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Multi-Purpose White Copy Paper<br>
+                                        A4 White- 80gsm [Ream: 500 Sheets]<br>
+                                        Brand: HP Everyday HW
+                                    </h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <span id="cart" class="d-flex">
+                                        <input type="number" name="qty" id="qty" value="1" class="text-center">
+                                        <a href="#" class="btn btn-primary"><i class="fas fa-shopping-cart"></i></a>
+                                        <a href="#" class="btn btn-primary"><i class="fas fa-heart"></i></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6  mb-3">
+                            <div class="card">
+                                <img src="https://via.placeholder.com/1000x1000.png" class="card-img-top img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Multi-Purpose White Copy Paper<br>
+                                        A4 White- 80gsm [Ream: 500 Sheets]<br>
+                                        Brand: HP Everyday HW
+                                    </h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <span id="cart" class="d-flex">
+                                        <input type="number" name="qty" id="qty" value="1" class="text-center">
+                                        <a href="#" class="btn btn-primary"><i class="fas fa-shopping-cart"></i></a>
+                                        <a href="#" class="btn btn-primary"><i class="fas fa-heart"></i></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6  mb-3">
+                            <div class="card">
+                                <img src="https://via.placeholder.com/1000x1000.png" class="card-img-top img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Multi-Purpose White Copy Paper<br>
+                                        A4 White- 80gsm [Ream: 500 Sheets]<br>
+                                        Brand: HP Everyday HW
+                                    </h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <span id="cart" class="d-flex">
+                                        <input type="number" name="qty" id="qty" value="1" class="text-center">
+                                        <a href="#" class="btn btn-primary"><i class="fas fa-shopping-cart"></i></a>
+                                        <a href="#" class="btn btn-primary"><i class="fas fa-heart"></i></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6  mb-3">
+                            <div class="card">
+                                <img src="https://via.placeholder.com/1000x1000.png" class="card-img-top img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Multi-Purpose White Copy Paper<br>
+                                        A4 White- 80gsm [Ream: 500 Sheets]<br>
+                                        Brand: HP Everyday HW
+                                    </h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <span id="cart" class="d-flex">
+                                        <input type="number" name="qty" id="qty" value="1" class="text-center">
+                                        <a href="#" class="btn btn-primary"><i class="fas fa-shopping-cart"></i></a>
+                                        <a href="#" class="btn btn-primary"><i class="fas fa-heart"></i></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+        <footer id="main-footer" class="row d-flex flex-column">
+            <div id="top-footer" class="d-flex">
+                <div class="footer-link-section">
+                    <h6 class="mb-3">About Deloffice</h6>
+
+                    <ul class="m-0 p-0">
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                    </ul>
+                </div>
+                <div class="footer-link-section">
+                    <h6 class="mb-3">Customer Service</h6>
+
+                    <ul class="m-0 p-0">
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                    </ul>
+                </div>
+                <div class="footer-link-section">
+                    <h6 class="mb-3">Register</h6>
+
+                    <ul class="m-0 p-0">
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                    </ul>
+                </div>
+                <div class="footer-link-section">
+                    <h6 class="mb-3">Contact Us</h6>
+
+                    <ul class="m-0 p-0">
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div id="bottom-footer">
+                <p class="text-center m-0">Copyright © 2020 DelOffice Ltd. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
